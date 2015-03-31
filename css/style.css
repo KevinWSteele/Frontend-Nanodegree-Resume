@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #5882FA;
   line-height: 48px;
   display: inline;
 }
@@ -31,7 +31,7 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000000;
+  color: #5882FA;
   line-height: 22px;
 }
 
@@ -48,6 +48,14 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
+.slider{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.role{
+  color: white;
+}
 
 .date-text {
   font-style: italic;
@@ -87,16 +95,18 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #5882FA;
   display: none;
 }
 
-.orange {
-  background-color: #F5AE23;
+
+
+.lightcenter-text{
+  color:#F3F3F3;
 }
 
-.orange-text {
-  color: #F5AE23;
+.blue-text {
+  color: #5882FA;
 }
 
 .white-text {
@@ -111,7 +121,7 @@ a {
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #484848;
 }
 
 /* TODO: Replace with image later */
@@ -122,17 +132,18 @@ a {
 .flex-box {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
 }
 
+#topContacts{
+  flex-direction:row;
+}
 .center-content {
-  padding-top: 2.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 2.5%
+  padding: 2.5% 5%;
+
 }
 
 ul {
@@ -142,12 +153,14 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 200px;
+  width: 20%;
+  height: 20%;
   display: none;
 }
 
 img {
   padding: 10px;
+  width: 50%;
 }
 
 /* Bar chart stuff */
@@ -161,7 +174,9 @@ img {
   color: white;
   display: inline-block;
 }
-
+.online {
+  margin-left: -50px;
+}
 span {
   padding: 5px;
 }
