@@ -109,12 +109,7 @@ bio.display = function(){
     
     var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     $("#topContacts").append(formattedMessage);
-    
-};
 
-bio.display();
-
-if (bio.skills.length > 0) {
     $("#header").append(HTMLskillsStart);
     
     var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
@@ -125,8 +120,12 @@ if (bio.skills.length > 0) {
     $("#skills").append(formattedSkill);
     formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
     $("#skills").append(formattedSkill);
-       
+    
 };
+
+bio.display();
+
+
 
 work.display= function(){
 for (job in work.jobs) {
