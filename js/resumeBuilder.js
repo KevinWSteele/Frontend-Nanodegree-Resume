@@ -13,46 +13,48 @@ var bio = {
     },
     "image": "images/intherain.jpg",
     "welcomeMessage": "Welcome to my super cool interactive resume",
-    "skills": ["HTML", "CSS", "JavaScript", "GitHub"]
+    "skills": ["CSS", "HTML", "JavaScript", "GitHub"]
 }
 
 
 
 
 var work = {
-    "jobs": [{
+    "jobs": [
+    {
+    "employer": "University of New Haven",
+    "title": "Graduate Assistant",
+    "location": "West Haven, CT",
+    "dates": "September 2015 - present",
+    "description": "Tutored students for computer science courses"  
+    }  , 
+    {
     "employer": "KenCast Inc",
     "title": "Intern",
     "location": "Norwalk, CT",
-    "dates": "July 2014 - March 2015",
-    "description": "Edited 4K videos, converted videos into different formats, and made PowerPoint presentations"
-    },
-    
-    {
-    "employer": "Sixteen19",
-    "title": "Post-Production Intern",
-    "location": "New York City, NY",
-    "dates": "March 2014 - September 2014",
-    "description": "Performed inventory, configured Avid ediitng suites, dropped off hard drives"  
-    }]
+    "dates": "July 2014 - August 2015",
+    "description": "Edited videos, managed live event broadcasts, and made PowerPoint presentations"
+    }
+    ]
 }
 
 var education = {
-    "schools": [{
+    "schools": [
+        {
+        "name": "University of New Haven",
+        "location": "West Haven, CT",
+        "degree": "Masters",
+        "dates": "2015-2017",
+        "major": "Computer Science"
+        },
+        {
         "name": "Binghamton University",
         "location": "Binghamton, NY",
         "degree": "Bachelors",
         "dates": "2009-2013",
         "major": "Cinema"
-        },
-    
-        {
-        "name": "King's College London",
-        "location": "London, England",
-        "degree": "One Semester, Study Abroad",
-        "dates": "2012",
-        "major": "Film Studies"
-        }],
+        }
+    ],
         
     "onlinecourses": [
         {"title": "Nanodegree in Web Development",
