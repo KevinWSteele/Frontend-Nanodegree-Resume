@@ -7,7 +7,6 @@ var bio = {
     "contacts": {
         "mobile": "(845)-549-6210",
         "email": "kwsteele@optonline.net",
-        "twitter": "twitter.com/kevinwsteele",
         "github": "KevinWSteele",
         "location": "Hopewell Junction, NY"
     },
@@ -60,12 +59,10 @@ var education = {
         {"title": "Nanodegree in Web Development",
         "school": "Udacity",
         "dates": "February 2015 - present",
-        "url": "https://www.udacity.com/course/nd001"  
         },
         { "title": "HTML, CSS, and JavaScript",
         "school": "Codeacademy",
         "dates": "November 2014 - January 2015",
-        "url": "http://www.codecademy.com"
         }
     ]
 }
@@ -96,9 +93,6 @@ bio.display = function(){
     
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
     $("#topContacts").append(formattedEmail);
-    
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    $("#topContacts").append(formattedTwitter);
     
     var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
     $("#topContacts").append(formattedGithub);
@@ -201,9 +195,6 @@ for (online in education.onlinecourses) {
     var formattedDates = HTMLonlineDates.replace("%data%", education.onlinecourses[online].dates);
     $(".education-entry:last").append(formattedDates);
     
-    var formattedURL = HTMLonlineURL.replace("%data%", education.onlinecourses[online].url);
-    $(".education-entry:last").append(formattedURL);
-      
 }
 };
 
